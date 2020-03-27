@@ -2,6 +2,7 @@ package com.example.buttoncustombg
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
@@ -68,12 +69,13 @@ class MainActivity : AppCompatActivity() {
     private fun addDynamicEditText() {
         val dynamicEditext = EditText(this)
         dynamicEditext.layoutParams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.MATCH_PARENT,
             LinearLayout.LayoutParams.WRAP_CONTENT
         )
         dynamicEditext.hint = "Enter Your Name"
         dynamicEditext.background = resources.getDrawable(R.drawable.btn_edge_color)
         dynamicEditext.isSingleLine = true
+        dynamicEditext.inputType = InputType.TYPE_CLASS_NUMBER
         dynamicEditext.setPadding(20, 15, 20, 15)
         mainLayout.addView(dynamicEditext)
 
