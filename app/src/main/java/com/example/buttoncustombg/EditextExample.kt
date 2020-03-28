@@ -50,5 +50,11 @@ class EditextExample : AppCompatActivity() {
             }
 
         })
+
+        /*
+        Show/Hide Password in Android EditText – Kotlin
+         */
+
+
     }
 }
